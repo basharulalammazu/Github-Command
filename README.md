@@ -1,4 +1,4 @@
-# Github-Command
+# Github Command
 
 ## For First Time Push
 **********************
