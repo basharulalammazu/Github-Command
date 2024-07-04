@@ -13,9 +13,7 @@ git commit -m "Describe changes"  # Commit the staged changes with a descriptive
 
 git remote add origin <repository-url> # Add a remote repository named 'origin' with its URL
 
-git remote -v  # Verify the remote repository URL (optional)
-
-git push origin main  # Push the committed changes to the 'main' branch of the remote repository named 'origin'
+git push origin <branch name> (like: main/master)  # Push the committed changes to the 'main' branch of the remote repository named 'origin'
 ```
 
 
@@ -33,6 +31,8 @@ git push origin main/master  # Push changes to the 'main' or 'master' branch of 
 ## For Checking
 ***************
 ```bash
+git remote -v  # Verify the remote repository URL (optional)
+
 git status  # Check the status of the repository (optional)
 
 git log  # View the commit history (optional)
