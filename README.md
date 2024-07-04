@@ -1,7 +1,6 @@
 # Github Command
 
 ## For First Time Push
-**********************
 ```bash
 git init   # Initialize a new Git repository in the current directory
 
@@ -17,8 +16,9 @@ git push origin <branch name> (like: main/master)  # Push the committed changes 
 ```
 
 
+
+
 ## For Update Push
-*****************
 ```bash
 git add .   # Stage all modified files for commit
 
@@ -28,8 +28,9 @@ git push origin main/master  # Push changes to the 'main' or 'master' branch of 
 ```
 
 
+
+
 ## For Checking
-***************
 ```bash
 git remote -v  # Verify the remote repository URL (optional)
 
@@ -41,8 +42,18 @@ git remote  # List configured remotes (optional)
 ```
 
 
+
+
+## Cloning a Remote Repository
+```bash
+git clone <repository-url> # Clone the repository locally
+```
+
+
+
+
+
 ## Force Push Changes (Use with Caution)
-****************************************
 ```bash
 git push -f  # Force push changes to the remote repository (use with caution)
 
@@ -52,8 +63,10 @@ git push origin master --force  # Another way to force push changes to the 'mast
 ```
 
 
+
+
+
 ## Update Local Files from Remote Repository
-********************************************
 ```bash
 git stash  # Stash current changes in case of conflicts
 
