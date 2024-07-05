@@ -39,15 +39,15 @@
 | Command | Description |
 | --- | --- |
 | `git push -f` | Force push changes to the remote repository (use with caution) |
-| `git push -f -u origin main` | Force push changes to the 'main' branch of the remote repository 'origin' |
-| `git push origin master --force` | Another way to force push changes to the 'master' branch of the remote repository 'origin' |
+| `git push -f -u origin <branch name>` | Force push changes to the 'main' branch of the remote repository 'origin' |
+| `git push origin <branch name> --force` | Another way to force push changes to the 'master' branch of the remote repository 'origin' |
 
 ## Update Local Files from Remote Repository
 
 | Command | Description |
 | --- | --- |
 | `git stash` | Stash current changes in case of conflicts |
-| `git pull origin master` | Pull changes from the 'master' branch of the remote repository 'origin' |
+| `git pull origin <branch name>` | Pull changes from the 'master' branch of the remote repository 'origin' |
 | `git stash apply` | Apply the stashed changes back to the working directory |
 
 ## Branch Management
