@@ -19,19 +19,29 @@
 | `git commit -m "Describe changes"` | Commit the staged changes with a descriptive message |
 | `git push origin <branch name>` | Push changes to the specified branch of the remote repository |
 
-## For Checking
+## For .gitignore File
 
-| Command | Description |
-| --- | --- |
+| Command          | Description                        |
+|------------------|------------------------------------|
+| `nano .gitignore` | Create or edit the .gitignore file |
+| `Ctrl + x`       | Save                               |
+| `Ctrl + Y`       | Exit                               |
+| `Enter`          | Confirm                            |
+| `echo "*.log" >> .gitignore` | Add a new pattern to the .gitignore file |
+| `git rm -r --cached .` | Remove all files from the Git index and re-add them to respect the .gitignore rules |
+| `git add .gitignore` | Stage the .gitignore file for commit |
+| `git commit -m "Update .gitignore"` | Commit the changes to the .gitignore file |
+| `git rm -r --cached node_modules/` | Remove ignored files or directories from the repository |
+
+## Navigating and Viewing Repository
+
+| Command                           | Description                             |
+|-----------------------------------|-----------------------------------------|
+| `cd path/to/your/repository`      | Change directory to your repository     |
 | `git remote -v` | Verify the remote repository URL (optional) |
 | `git status` | Check the status of the repository (optional) |
 | `git log` | View the commit history (optional) |
 | `git remote` | List configured remotes (optional) |
-
-## Cloning a Remote Repository
-
-| Command | Description |
-| --- | --- |
 | `git clone <repository-url>` | Clone the repository locally |
 
 ## Force Push Changes (Use with Caution)
@@ -60,6 +70,7 @@
 | `git checkout -b <branch-name>` | Create and switch to a new branch |
 | `git branch -d <branch-name>` | Delete the specified branch |
 | `git push origin --delete <branch-name>` | Delete the specified branch on the remote repository |
+| `git branch --set-upstream-to origin main` | Set the upstream branch for the current local branch to `main` on the remote repository `origin` |
 
 ## Merging and Rebasing
 
@@ -95,21 +106,6 @@
 | `git tag -a <tag-name> -m "Tag message"` | Create an annotated tag |
 | `git push origin <tag-name>` | Push the specified tag to the remote repository |
 | `git push origin --tags` | Push all tags to the remote repository |
-
-## Working with .gitignore
-
-| Command | Description |
-| --- | --- |
-| `echo "*.log" >> .gitignore` | Add a new pattern to the .gitignore file |
-| `git rm -r --cached .` | Remove all files from the Git index and re-add them to respect the .gitignore rules |
-| `git add .gitignore` | Stage the .gitignore file for commit |
-| `git commit -m "Update .gitignore"` | Commit the changes to the .gitignore file |
-
-## Removing Ignored Files from Repository
-
-| Command | Description |
-| --- | --- |
-| `git rm -r --cached node_modules/` | Remove ignored files or directories from the repository |
 
 ## Stashing Changes
 
@@ -147,8 +143,8 @@
 
 | Command | Description |
 | --- | --- |
-| bash```git restore <file>``` | Restore a specific file from the working directory |
-| bash```git restore --staged <file>``` | Unstage a specific file |
+| `git restore <file>` | Restore a specific file from the working directory |
+| `git restore --staged <file>` | Unstage a specific file |
 
 ## Viewing Blame
 
