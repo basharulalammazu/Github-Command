@@ -60,6 +60,17 @@
 | `git pull origin <branch name>` | Pull changes from the 'master' branch of the remote repository 'origin' |
 | `git stash apply` | Apply the stashed changes back to the working directory |
 
+
+## Handling Large Files with Git LFS
+| Command	| Description |
+| --- | --- |
+| `git lfs install` |	Initialize Git LFS in the repository |
+| `git lfs track "*.<file type>"` |	Track all files of the specified type (e.g., .mp4, .gif) with Git LFS |
+| `git add .gitattributes` |	Stage the .gitattributes file for commit |
+| `git add .`	| Stage all other files for commit |
+| `git commit -m "Describe changes"` |	Commit the staged changes with a descriptive message |
+| `git push origin main` |	Push the committed changes to the 'main' branch of the remote repository |
+
 ## Branch Management
 
 | Command | Description |
