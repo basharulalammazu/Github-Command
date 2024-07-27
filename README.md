@@ -1,5 +1,14 @@
 # Git Commands
 
+## Configuring User Information
+| Command	| Description |
+| --- | --- |
+| `git config --global user.name "<username>"`| Set a name that is identifiable for credit when reviewing version history |
+| `git config --global user.email "<useremail>"`	| Set an email address that will be associated with each history marker |
+| `git config --global color.ui auto`	| Set automatic command line coloring for Git for easy reviewing |
+
+<br>
+
 ## For First Time Push
 
 | Command | Description |
@@ -11,6 +20,8 @@
 | `git remote add origin <repository-url>` | Add a remote repository named 'origin' with its URL |
 | `git push origin <branch name>` | Push the committed changes to the specified branch of the remote repository named 'origin' |
 
+<br>
+
 ## For Update Push
 
 | Command | Description |
@@ -18,6 +29,8 @@
 | `git add .` | Stage all modified files for commit |
 | `git commit -m "Describe changes"` | Commit the staged changes with a descriptive message |
 | `git push origin <branch name>` | Push changes to the specified branch of the remote repository |
+
+<br>
 
 ## For .gitignore File
 
@@ -33,6 +46,8 @@
 | `git commit -m "Update .gitignore"` | Commit the changes to the .gitignore file |
 | `git rm -r --cached node_modules/` | Remove ignored files or directories from the repository |
 
+<br>
+
 ## Navigating and Viewing Repository
 
 | Command                           | Description                             |
@@ -44,6 +59,8 @@
 | `git remote` | List configured remotes (optional) |
 | `git clone <repository-url>` | Clone the repository locally |
 
+<br>
+
 ## Force Push Changes (Use with Caution)
 
 | Command | Description |
@@ -51,6 +68,8 @@
 | `git push -f` | Force push changes to the remote repository (use with caution) |
 | `git push -f -u origin <branch name>` | Force push changes to the 'main' branch of the remote repository 'origin' |
 | `git push origin <branch name> --force` | Another way to force push changes to the 'master' branch of the remote repository 'origin' |
+
+<br>
 
 ## Update Local Files from Remote Repository
 
@@ -60,6 +79,7 @@
 | `git pull origin <branch name>` | Pull changes from the 'master' branch of the remote repository 'origin' |
 | `git stash apply` | Apply the stashed changes back to the working directory |
 
+<br>
 
 ## Handling Large Files with Git LFS
 | Command	| Description |
@@ -70,6 +90,8 @@
 | `git add .`	| Stage all other files for commit |
 | `git commit -m "Describe changes"` |	Commit the staged changes with a descriptive message |
 | `git push origin main` |	Push the committed changes to the 'main' branch of the remote repository |
+
+<br>
 
 ## Branch Management
 
@@ -83,6 +105,8 @@
 | `git push origin --delete <branch-name>` | Delete the specified branch on the remote repository |
 | `git branch --set-upstream-to origin main` | Set the upstream branch for the current local branch to `main` on the remote repository `origin` |
 
+<br>
+
 ## Merging and Rebasing
 
 | Command | Description |
@@ -91,6 +115,8 @@
 | `git rebase <branch-name>` | Rebase the current branch onto the specified branch |
 | `git rebase --continue` | Continue the rebase after resolving conflicts |
 | `git rebase --abort` | Abort the rebase process |
+
+<br>
 
 ## Viewing and Comparing Changes
 
@@ -101,6 +127,8 @@
 | `git diff <commit-id>` | Show changes between working directory and the specified commit |
 | `git show <commit-id>` | Show details of the specified commit |
 
+<br>
+
 ## Undoing Changes
 
 | Command | Description |
@@ -108,6 +136,8 @@
 | `git reset <file>` | Unstage the specified file |
 | `git reset --hard` | Discard all changes in the working directory |
 | `git revert <commit-id>` | Revert the specified commit |
+
+<br>
 
 ## Tagging
 
@@ -117,6 +147,8 @@
 | `git tag -a <tag-name> -m "Tag message"` | Create an annotated tag |
 | `git push origin <tag-name>` | Push the specified tag to the remote repository |
 | `git push origin --tags` | Push all tags to the remote repository |
+
+<br>
 
 ## Stashing Changes
 
@@ -129,11 +161,15 @@
 | `git stash drop stash@{0}` | Remove a specific stash from the stash list |
 | `git stash clear` | Remove all stashes |
 
+<br>
+
 ## Cherry-Picking Commits
 
 | Command | Description |
 | --- | --- |
 | `git cherry-pick <commit-id>` | Apply the changes from a specific commit onto the current branch |
+
+<br>
 
 ## Squashing Commits
 
@@ -141,6 +177,8 @@
 | --- | --- |
 | `git rebase -i HEAD~n` | Interactively rebase the last n commits to squash them |
 | `# Follow the interactive rebase instructions in the editor` | Follow the interactive rebase instructions in the editor |
+
+<br>
 
 ## Rewriting Commit History
 
@@ -150,6 +188,8 @@
 | `git rebase -i <commit-id>^` | Interactively rebase to rewrite commit history starting from a specific commit |
 | `# Follow the interactive rebase instructions in the editor` | Follow the interactive rebase instructions in the editor |
 
+<br>
+
 ## Restoring Files
 
 | Command | Description |
@@ -157,11 +197,15 @@
 | `git restore <file>` | Restore a specific file from the working directory |
 | `git restore --staged <file>` | Unstage a specific file |
 
+<br>
+
 ## Viewing Blame
 
 | Command | Description |
 | --- | --- |
 | `git blame <file>` | Show who changed each line in a file |
+
+<br>
 
 ## Configuring Git
 
@@ -171,12 +215,16 @@
 | `git config --global user.email "you@example.com"` | Set the global email for Git |
 | `git config --global core.editor "code --wait"` | Set the default editor for Git |
 
+<br>
+
 ## Creating and Applying Patches
 
 | Command | Description |
 | --- | --- |
 | `git format-patch -1 <commit-id>` | Create a patch file for a specific commit |
 | `git am <patch-file>` | Apply a patch file to the current branch |
+
+<br>
 
 ## Aliases
 
