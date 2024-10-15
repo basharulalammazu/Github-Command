@@ -18,6 +18,7 @@
 | `git add .` | Stage all other modified files for commit |
 | `git commit -m "Describe changes"` | Commit the staged changes with a descriptive message |
 | `git remote add origin <repository-url>` | Add a remote repository named 'origin' with its URL |
+| `git branch -m master main` | Rename the local branch `master` to `main` (useful when the local branch is `master` but the remote branch on GitHub is `main`) |
 | `git push origin <branch name>` | Push the committed changes to the specified branch of the remote repository named 'origin' |
 
 <br>
