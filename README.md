@@ -33,6 +33,28 @@
 
 <br>
 
+## Branch Management
+
+| Command | Description |
+| --- | --- |
+| `git branch` | List all local branches |
+| `git branch <branch-name>` | Create a new branch |
+| `git checkout <branch-name>` | Switch to the specified branch |
+| `git checkout -b <branch-name>` | Create and switch to a new branch |
+| `git branch -d <branch-name>` | Delete the specified branch |
+| `git push origin --delete <branch-name>` | Delete the specified branch on the remote repository |
+| `git branch --set-upstream-to origin main` | Set the upstream branch for the current local branch to `main` on the remote repository `origin` |
+
+### Additional Commands
+
+| Command | Description |
+| --- | --- |
+| `git branch -a` | List all branches, including remote branches |
+| `git checkout main` | Switch to the `main` branch |
+| `git checkout -b main origin/main` | Create a local `main` branch that tracks the remote `main` branch |
+
+<br>
+
 ## For .gitignore File
 
 | Command          | Description                        |
