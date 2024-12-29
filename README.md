@@ -71,16 +71,21 @@
 
 <br>
 
-## Navigating and Viewing Repository
+
+
+## Viewing and Searching Files
 
 | Command                           | Description                             |
 |-----------------------------------|-----------------------------------------|
+| `grep -iRl "<searching item>"` | Search for files containing the specified text (`<searching item>`) in the current directory and its subdirectories (case-insensitive) |
 | `cd path/to/your/repository`      | Change directory to your repository     |
 | `git remote -v` | Verify the remote repository URL (optional) |
 | `git status` | Check the status of the repository (optional) |
 | `git log` | View the commit history (optional) |
 | `git remote` | List configured remotes (optional) |
 | `git clone <repository-url>` | Clone the repository locally |
+
+
 
 <br>
 
